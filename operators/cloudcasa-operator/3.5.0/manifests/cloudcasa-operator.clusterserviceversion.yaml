@@ -23,7 +23,7 @@ metadata:
     repository: https://github.com/catalogicsoftware/cloudcasa-operator-for-openshift
     operators.operatorframework.io/builder: operator-sdk-v1.9.0+git
     operators.operatorframework.io/project_layout: helm.sdk.operatorframework.io/v1
-  name: cloudcasa-operator.v3.4.0
+  name: cloudcasa-operator.v3.5.0
   namespace: placeholder
 spec:
   apiservicedefinitions: {}
@@ -214,8 +214,7 @@ spec:
   provider:
     name: catalogic Software
     url: https://cloudcasa.io
-  version: 3.4.0
-  #  replaces: cloudcasa-operator.v3.3.0
+  version: 3.5.0
   relatedImages:
   - name: ose-kube-rbac-proxy
     image: registry.redhat.io/openshift4/ose-kube-rbac-proxy@sha256:4c13b5f5826ca64f4c9f397515f34cfe51f817f76bc7efcdbaef379b43cd1448
