@@ -13,4 +13,4 @@ data:
       resourceName: 811c9dc5.cloudcasa.io
 kind: ConfigMap
 metadata:
-  name: cloudcasa-operator-manager-config
+  name: cloudcasa-operator-v4-manager-config
