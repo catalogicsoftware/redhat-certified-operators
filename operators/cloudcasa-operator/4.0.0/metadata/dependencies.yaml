@@ -1,6 +1,7 @@
+---
 dependencies:
   - type: olm.package
     value:
       packageName: openshift
       version: ">=4.10.0"
-      
+     
