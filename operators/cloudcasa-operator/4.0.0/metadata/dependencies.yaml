@@ -3,3 +3,4 @@ dependencies:
     value:
       packageName: openshift
       version: ">=4.10.0"
+      
