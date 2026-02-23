@@ -28,7 +28,7 @@ metadata:
     capabilities: Basic Install
     categories: Storage
     containerImage: quay.io/redhat-isv-containers/61151d66b987c98f0ea8651e@sha256:b879c34ae6b588c2acfce0394b7b920e283ab0d4dac0e241b03f4eb0f5e20173
-    createdAt: "2026-02-23"
+    createdAt: "2026-02-23T00:00:00Z"
     description: CloudCasa is a powerful and easy-to-use data protection service for
       Kubernetes and cloud databases.
     features.operators.openshift.io/disconnected: "false"
@@ -41,7 +41,6 @@ metadata:
     operators.operatorframework.io/builder: operator-sdk-v1.8.0-ocp
     operators.operatorframework.io/project_layout: helm.sdk.operatorframework.io/v1
   name: cloudcasa-operator.v4.0.0
-  namespace: placeholder
 spec:
   apiservicedefinitions: {}
   customresourcedefinitions:
@@ -147,7 +146,13 @@ spec:
           resources:
           - secrets
           verbs:
-          - '*'
+          - get
+          - list
+          - watch
+          - create
+          - update
+          - patch
+          - delete
         - apiGroups:
           - ""
           resources:
@@ -239,7 +244,13 @@ spec:
                 ports:
                 - containerPort: 8443
                   name: https
-                resources: {}
+                resources:
+                  limits:
+                    cpu: 500m
+                    memory: 128Mi
+                  requests:
+                    cpu: 5m
+                    memory: 64Mi
               - args:
                 - --health-probe-bind-address=:8081
                 - --metrics-bind-address=127.0.0.1:8080
@@ -322,7 +333,7 @@ spec:
   - cloudcasa
   links:
   - name: Cloudcasa Operator
-    url: https://cloudcasa-operator.domain
+    url: https://cloudcasa.io
   minKubeVersion: 1.24.0
   maintainers:
   - email: support@cloudcasa.io
