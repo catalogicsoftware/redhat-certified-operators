@@ -27,7 +27,7 @@ metadata:
       ]
     capabilities: Basic Install
     categories: Storage
-    containerImage: quay.io/redhat-isv-containers/61151d66b987c98f0ea8651e @sha256:b879c34ae6b588c2acfce0394b7b920e283ab0d4dac0e241b03f4eb0f5e20173
+    containerImage: quay.io/redhat-isv-containers/61151d66b987c98f0ea8651e@sha256:b879c34ae6b588c2acfce0394b7b920e283ab0d4dac0e241b03f4eb0f5e20173
     createdAt: "2026-02-"
     description: CloudCasa is a powerful and easy-to-use data protection service for
       Kubernetes and cloud databases.
@@ -245,7 +245,7 @@ spec:
                 - --metrics-bind-address=127.0.0.1:8080
                 - --leader-elect
                 - --leader-election-id=cloudcasa-operator-v4
-                image: quay.io/redhat-isv-containers/61151d66b987c98f0ea8651e @sha256:b879c34ae6b588c2acfce0394b7b920e283ab0d4dac0e241b03f4eb0f5e20173
+                image: quay.io/redhat-isv-containers/61151d66b987c98f0ea8651e@sha256:b879c34ae6b588c2acfce0394b7b920e283ab0d4dac0e241b03f4eb0f5e20173
                 livenessProbe:
                   httpGet:
                     path: /healthz
@@ -332,7 +332,7 @@ spec:
     name: Catalogic Software
     url: https://cloudcasa.io
   relatedImages:
-  - image: quay.io/redhat-isv-containers/61151d66b987c98f0ea8651e @sha256:b879c34ae6b588c2acfce0394b7b920e283ab0d4dac0e241b03f4eb0f5e20173
+  - image: quay.io/redhat-isv-containers/61151d66b987c98f0ea8651e@sha256:b879c34ae6b588c2acfce0394b7b920e283ab0d4dac0e241b03f4eb0f5e20173
     name: manager
   - image: registry.redhat.io/openshift4/ose-kube-rbac-proxy@sha256:648b14e4158da2a85eedb46b3456fb502d680d52d375ad34bf45b4b94f8b2ef6
     name: kube-rbac-proxy
