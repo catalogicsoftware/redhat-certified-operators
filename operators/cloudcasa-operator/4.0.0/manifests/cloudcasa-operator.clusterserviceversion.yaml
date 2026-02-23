@@ -28,7 +28,7 @@ metadata:
     capabilities: Basic Install
     categories: Storage
     containerImage: quay.io/redhat-isv-containers/61151d66b987c98f0ea8651e@sha256:b879c34ae6b588c2acfce0394b7b920e283ab0d4dac0e241b03f4eb0f5e20173
-    createdAt: "2026-02-"
+    createdAt: "2026-02-23"
     description: CloudCasa is a powerful and easy-to-use data protection service for
       Kubernetes and cloud databases.
     features.operators.openshift.io/disconnected: "false"
