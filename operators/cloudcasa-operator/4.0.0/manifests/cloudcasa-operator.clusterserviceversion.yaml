@@ -47,6 +47,14 @@ spec:
     - kind: Cloudcasa
       name: cloudcasas.apps.cloudcasa.io
       version: v1alpha1
+      description: Agent for backup and restore services.
+      displayName: Cloudcasa
+      specDescriptors:
+      - description: Cluster ID for registering the User Kubernetes to Cloudcasa
+        displayName: Cluster ID
+        path: cluster_id
+        x-descriptors:
+        - urn:alm:descriptor:com.tectonic.ui:password
   description: CloudCasa backup and migration service agent for Kubernetes
   displayName: cloudcasa-operator
   icon:
