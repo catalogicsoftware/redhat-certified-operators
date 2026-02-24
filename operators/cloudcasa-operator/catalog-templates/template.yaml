@@ -1,0 +1,8 @@
+schema: olm.semver
+generatedChannels:
+- name: alpha
+  minVersion: 4.0.0
+packages:
+- schema: olm.package
+  defaultChannel: alpha
+  name: cloudcasa-operator
