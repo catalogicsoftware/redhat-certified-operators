@@ -55,6 +55,16 @@ spec:
         path: cluster_id
         x-descriptors:
         - urn:alm:descriptor:com.tectonic.ui:password
+      resources:
+      - kind: Deployment
+        version: apps/v1
+        name: ""
+      - kind: Pod
+        version: v1
+        name: ""
+      - kind: Service
+        version: v1
+        name: ""
   description: CloudCasa backup and migration service agent for Kubernetes
   displayName: cloudcasa-operator
   icon:
