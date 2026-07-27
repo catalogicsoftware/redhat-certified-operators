@@ -34,6 +34,8 @@ entries:
     - pg4k-pgd.v1.1.1
     - pg4k-pgd.v1.1.0
     - pg4k-pgd.v1.0.1
+  - name: pg4k-pgd.v1.2.1
+    replaces: pg4k-pgd.v1.2.0
   name: stable
   package: pg4k-pgd
   schema: olm.channel
@@ -42,6 +44,15 @@ entries:
   - name: pg4k-pgd.v2.0.0-rc1
     replaces: pg4k-pgd.v1.2.0-rc1
   name: candidate
+  package: pg4k-pgd
+  schema: olm.channel
+- entries:
+  - name: pg4k-pgd.v2.0.0
+    skips:
+    - pg4k-pgd.v1.2.0
+  - name: pg4k-pgd.v2.0.1
+    replaces: pg4k-pgd.v2.0.0
+  name: stable-v2
   package: pg4k-pgd
   schema: olm.channel
 - image: 
@@ -65,7 +76,16 @@ entries:
 - image: 
     registry.connect.redhat.com/enterprisedb/pg4k-pgd@sha256:88df00bb4d5462155187c6d5b59f2cef1c67c2ddccdb1e81bd78cafcd51e8d16
   schema: olm.bundle
+- image: 
+    registry.connect.redhat.com/enterprisedb/pg4k-pgd@sha256:c6d8a03e4c81a2b405544108a52c346c41ec64e705a783443ae3385eb38b80ab
+  schema: olm.bundle
+- image: 
+    registry.connect.redhat.com/enterprisedb/pg4k-pgd@sha256:bc721e504e7e66470cf7e547d2dc66822ba919d2cabf5bd5c8200ab236bb373f
+  schema: olm.bundle
 - schema: olm.bundle
   image: 
-    registry.connect.redhat.com/enterprisedb/pg4k-pgd@sha256:c6d8a03e4c81a2b405544108a52c346c41ec64e705a783443ae3385eb38b80ab
+    registry.connect.redhat.com/enterprisedb/pg4k-pgd@sha256:280fa70710132b78fc542e95144a2ea01267845b9bbbbf51b9bf5945ec48f46e
+- schema: olm.bundle
+  image: 
+    registry.connect.redhat.com/enterprisedb/pg4k-pgd@sha256:1bc8b74df75ff081058093d32530263851fb227a05aa2e253b7bbc7bae37b0bc
 schema: olm.template.basic
